@@ -5,9 +5,17 @@ How-To using Docker
 -------------------
 
 - create a working directory, I'm using /home/flexdash
+- cd into that directory
 - git clone the flexdash sources: https://github.com/tve/flexdash
 - git clone node-red-flexdash : https://github.com/flexdash/node-red-flexdash
 - git clone network-diagram: : https://github.com/tve/node-red-fd-network-diagram
+- cd flexdash/src
+- npm install
+
+   Otherwise you would get following error when starting the flow:
+   
+   ![image](https://user-images.githubusercontent.com/14224149/160299480-286c6eb7-883e-461c-92f8-fb52fa3c10f9.png)
+
 - create a shell script to start Node-RED in docker, adjust paths and ports:
 ```
 #! /usr/bin/env bash
